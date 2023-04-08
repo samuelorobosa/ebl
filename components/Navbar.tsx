@@ -12,7 +12,13 @@ const Navbar = () => {
     }
     let pathname = ROUTER.pathname;
 
-    const {toggleNavbar} = useContext(NavContext);
+    const navbarContext  = useContext(NavContext);
+
+    if(!navbarContext){
+        return null
+    }
+
+    const {toggleNavbar} = navbarContext;
 
     return(
         <div className="flex justify-between items-center py-5 max-w-6xl mx-auto text-white">

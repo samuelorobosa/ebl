@@ -7,6 +7,7 @@ import {motion} from "framer-motion";
 
 function Modals(){
     const router:NextRouter = useRouter();
+
     const modalContext = useContext(ModalContext);
 
     if (!modalContext) {

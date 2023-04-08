@@ -1,6 +1,8 @@
-import {createContext, useState} from "react";
+import React, {createContext, useState} from "react";
 
-const NavContext = createContext({});
+type navState = Partial<boolean> | undefined;
+
+const NavContext = createContext<{ open: navState; toggleNavbar: () => void} | null>(null);
 export const NavProvider = ({children}:any) => {
     const [open,setOpen] = useState(false);
     const toggleNavbar = () =>{
