@@ -7,7 +7,7 @@ const ModalContext = createContext<{ modalState: ModalState; modalDispatch: Reac
     null
 );
 
-export const ModalProvider : React.FC<React.ReactNode> = ({ children }:any) => {
+export const ModalProvider  = ({ children }:any) => {
     const modal = [false, false, false];
     const [modalState, modalDispatch] = useReducer(ModalReducer, modal);
 
