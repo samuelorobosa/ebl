@@ -1,0 +1,25 @@
+.testimonial{
+    background-size: cover;
+    border-radius: 6px;
+    height: 28rem;
+    padding: 12px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+.testimonial_divine_tega_ukeghe{
+    background-image: url("/images/divine_tega_ukeghe.jpeg");
+}
+
+.testimonial_osato_mercy{
+    background-image: url("/images/osato_mercy.jpeg");
+}
+
+.testimonial_idehen_violet{
+    background-image: url("/images/idehen_violet.jpeg");
+}

@@ -1,0 +1,21 @@
+.jumbotron_index{
+    background-image: linear-gradient(304.16deg,rgba(58,103,177,0.6) 39.13%,rgba(58,103,177,0) 101.44%), url('/images/jumbotron.jpeg');
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    padding-bottom: 30vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.jumbotron_about{
+    background-image: linear-gradient(300.25deg, rgba(58, 103, 177, 0.5) 41.2%, rgba(233, 241, 255, 0.5) 92.92%),url('/images/jumbotron_about.jpeg');
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 30vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
