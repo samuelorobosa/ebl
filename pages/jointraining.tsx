@@ -1,19 +1,37 @@
 import Navbar from "@/components/Navbar";
 import React, {useContext} from "react";
-import {useForm,Controller} from "react-hook-form";
+import {useForm, Controller, SubmitHandler} from "react-hook-form";
 import Select from 'react-select'
 import axios from "axios";
 import { toast } from 'react-hot-toast';
 import * as Yup from "yup";
 import {yupResolver} from "@hookform/resolvers/yup";
-import {useMutation} from "@tanstack/react-query";
+import {useMutation, UseMutationResult} from "@tanstack/react-query";
 import ErrorContainer from "@/components/ErrorContainer";
 import ModalContext from "@/context/Modal/ModalContext";
 import {ScaleLoader} from "react-spinners";
 
-type FormData = Object;
+
+type FormValues = {
+    state_of_Residence: string | null;
+    faculty: string | null;
+    level: string | null;
+    first_name: string | null;
+    middle_name: string | null;
+    last_name: string | null;
+    date_of_birth: string | null;
+    department: string | null;
+    email: string | null;
+    phone_number: string | null;
+};
+
+type APIResponse = {
+    response: any;
+};
 function Jointraining(){
-    const {modalDispatch} = useContext(ModalContext);
+
+    const { modalDispatch } = useContext(ModalContext);
+
     const validationSchema = Yup.object({
         first_name: Yup.string().required('Enter your first name').max(150,'Name is too long. Please shorten it.').min(1, 'Name is too short'),
         middle_name: Yup.string().required('Enter your middle name').max(150,'Name is too long. Please shorten it.').min(1, 'Name is too short'),
@@ -32,6 +50,13 @@ function Jointraining(){
             state_of_Residence: null,
             faculty: null,
             level: null,
+            first_name:null,
+            middle_name:null,
+            last_name:null,
+            date_of_birth:null,
+            department:null,
+            email:null,
+            phone_number:null,
         },
         resolver: yupResolver(validationSchema)
     });
@@ -101,8 +126,7 @@ function Jointraining(){
         { value: 'other', label: 'other' },
     ];
 
-
-    const {isLoading, mutateAsync} = useMutation((data:{level: any, faculty:any, state_of_Residence:any}) => {
+    const {isLoading, mutateAsync}: UseMutationResult<APIResponse, unknown, FormValues> = useMutation((data:(FormValues|any)) => {
         // Rebuild FORM DATA
         let level = data.level.value;
         let faculty = data.faculty.value;
@@ -120,10 +144,14 @@ function Jointraining(){
         onError: ({response})=>{
             toast.error("An error occurred");
         },
-        onSuccess: ({data})=>{
+        onSuccess: ()=>{
             modalDispatch({ type: 1 });
         },
     });
+
+    const onSubmit:SubmitHandler<FormValues> = async (data: FormValues) => {
+        await mutateAsync(data);
+    };
     return(
         <div>
             <Navbar/>
@@ -136,7 +164,7 @@ function Jointraining(){
                         Congratulations on making the decision of joining this training. Fill out this form correctly and submit it after completion
                     </p>
                 </header>
-                <form className="mt-10 px-5" onSubmit={handleSubmit(mutateAsync)}>
+                <form className="mt-10 px-5" onSubmit={handleSubmit(onSubmit)}>
                     <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
                         <div className="">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">First Name</label>

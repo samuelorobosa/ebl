@@ -8,13 +8,8 @@ import {motion} from "framer-motion";
 function Modals(){
     const router:NextRouter = useRouter();
 
-    const modalContext = useContext(ModalContext);
+    const { modalState, modalDispatch } = useContext(ModalContext);
 
-    if (!modalContext) {
-        return null;
-    }
-
-    const { modalState, modalDispatch } = modalContext;
     const removeAllModals = () => {
         modalDispatch({type:2})
         router.push('/')
