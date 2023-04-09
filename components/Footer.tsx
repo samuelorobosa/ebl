@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import {AiOutlineMail} from "react-icons/ai";
 import {IoIosCall} from "react-icons/io";
+import Link from "next/link";
 
 function Footer(){
     const DATE = new Date();
@@ -20,15 +21,15 @@ function Footer(){
                    </p>
                    <p className="flex gap-2.5 text-blacks4 font-semibold text-xl my-2.5">
                        <IoIosCall/>
-                       <span>+234 701 067 5095</span>
+                       <span>+234 812 018 8641</span>
                    </p>
                </div>
                <div className="flex sm:justify-around sm:gap-0 justify-start gap-6">
                    <div>
                        <p className="text-ebl-black font-bold mb-4">Socials</p>
-                       <p className="text-ebl-black font-semibold my-3">Twitter</p>
-                       <p className="text-ebl-black font-semibold my-3">Instagram</p>
-                       <p className="text-ebl-black font-semibold my-3">LinkedIn</p>
+                       <Link href="https://twitter.com/jci_uniben?lang=en" className="hover:text-ebl-primary text-ebl-black block font-semibold my-3">Twitter</Link>
+                       <Link href="https://www.instagram.com/unibenjaycees/?hl=en" className="hover:text-ebl-primary text-ebl-black block font-semibold my-3">Instagram</Link>
+                       <Link href="https://www.linkedin.com/company/jcin-uniben/" className="hover:text-ebl-primary text-ebl-black font-semibold my-3">LinkedIn</Link>
                    </div>
                    <div>
                        <p className="text-ebl-black font-bold mb-4">Training</p>

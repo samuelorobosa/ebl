@@ -5,6 +5,7 @@ import PastEBLTrainings from "@/components/PastEBLTrainings";
 import Footer from "@/components/Footer";
 import React from "react";
 import SideNav from "@/components/SideNav";
+import Link from "next/link";
 
 export default function About(){
     return(
@@ -17,9 +18,9 @@ export default function About(){
                         <p>Our mission is to prepare the next generation for success ina rapidly evolving world by providing them with the skills and knowledge they need to thrive. Our training programs focus on three key areas: employability, business, and leadership. By equipping young people with these vital skills, we aim to help them build fulfilling careers, start successful businesses, and become effective leaders in their communities</p>
                     </div>
 
-                    <button className="bg-ebl-primary text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
+                    <Link href="/jointraining" className="text-center bg-ebl-primary text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
                         Join Training
-                    </button>
+                    </Link>
                 </Jumbotron>
                 <OurMission/>
                 <MeetOurLeaders/>

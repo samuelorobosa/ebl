@@ -42,6 +42,7 @@ function Jointraining(){
         level: Yup.object().required('Select your level'),
         department: Yup.string().required('Enter your department'),
         phone_number: Yup.string().required('Enter your phone number'),
+        date_of_birth: Yup.string().required('Enter your date of birth'),
     })
 
     const { register, handleSubmit, control, watch, formState: { errors } }
@@ -165,8 +166,8 @@ function Jointraining(){
                     </p>
                 </header>
                 <form className="mt-10 px-5" onSubmit={handleSubmit(onSubmit)}>
-                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
-                        <div className="">
+                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-x-4">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">First Name</label>
                             <input
                                 type="text"
@@ -177,7 +178,7 @@ function Jointraining(){
                                 {errors?.first_name?.message}
                             </ErrorContainer>
                         </div>
-                        <div className="">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Middle Name</label>
                             <input
                                 type="text"
@@ -190,8 +191,8 @@ function Jointraining(){
                         </div>
                     </section>
 
-                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
-                        <div className="">
+                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-x-4">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Last Name</label>
                             <input
                                 type="text"
@@ -202,7 +203,7 @@ function Jointraining(){
                                 {errors?.last_name?.message}
                             </ErrorContainer>
                         </div>
-                        <div className="">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Date of Birth</label>
                             <input
                                 type="date"
@@ -215,8 +216,8 @@ function Jointraining(){
                         </div>
                     </section>
 
-                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
-                        <div className="">
+                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-x-4">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">State of Residence</label>
                             <Controller
                                 name="state_of_Residence"
@@ -227,8 +228,8 @@ function Jointraining(){
                                     options={getStateOptions}
                                     classNames={{
                                         control: () => "bg-transparent border border-solid border-tertiary1 px-2 text-black rounded-md py-2",
-                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md my-2",
-                                        menu: () => "rounded-md my-2 bg-white text-black",
+                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md",
+                                        menu: () => "rounded-md  bg-white text-black mt-2",
                                     }}
                                 />}
                             />
@@ -236,7 +237,7 @@ function Jointraining(){
                                 {errors?.state_of_Residence?.message}
                             </ErrorContainer>
                         </div>
-                        <div className="">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Faculty</label>
                             <Controller
                                 name="faculty"
@@ -247,8 +248,8 @@ function Jointraining(){
                                     options={getFacultyOptions}
                                     classNames={{
                                         control: () => "bg-transparent border border-solid border-tertiary1 px-2 text-black rounded-md py-2",
-                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md my-2",
-                                        menu: () => "rounded-md my-2 bg-white text-black",
+                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md ",
+                                        menu: () => "rounded-md  bg-white text-black mt-2",
                                     }}
                                 />}
                             />
@@ -258,8 +259,8 @@ function Jointraining(){
                         </div>
                     </section>
 
-                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
-                        <div className="">
+                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-x-4">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Department</label>
                             <input
                                 type="text"
@@ -270,7 +271,7 @@ function Jointraining(){
                                 {errors?.department?.message}
                             </ErrorContainer>
                         </div>
-                        <div className="">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Level</label>
                             <Controller
                                 name="level"
@@ -281,8 +282,8 @@ function Jointraining(){
                                     options={getLevels}
                                     classNames={{
                                         control: () => "bg-transparent border border-solid border-tertiary1 px-2 text-black rounded-md py-2",
-                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md my-2",
-                                        menu: () => "rounded-md my-2 bg-white text-black",
+                                        menuList: () => "text-black border border-tertiary1 text-center text-base rounded-md",
+                                        menu: () => "rounded-md bg-white text-black my-2",
                                     }}
                                 />}
                             />
@@ -292,8 +293,8 @@ function Jointraining(){
                         </div>
                     </section>
 
-                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-4 my-2">
-                        <div className="">
+                    <section className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 sm:grid-rows-1 gap-x-4">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Email Address</label>
                             <input
                                 type="text"
@@ -304,7 +305,7 @@ function Jointraining(){
                                 {errors?.email?.message}
                             </ErrorContainer>
                         </div>
-                        <div className="">
+                        <div className="my-2">
                             <label className="text-ebl-black text-lg" htmlFor="full_name">Phone Number</label>
                             <input
                                 type="text"

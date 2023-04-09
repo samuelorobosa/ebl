@@ -7,6 +7,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SideNav from "@/components/SideNav";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -21,9 +22,9 @@ export default function Home() {
                   <p>EBL Training is aimed at exploring employability, business and leadership as vital skills needed in our ever changing world.</p>
               </div>
 
-              <button className="bg-ebl-primary text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
+              <Link href="/jointraining" className="bg-ebl-primary text-center text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
                   Join Training
-              </button>
+              </Link>
           </Jumbotron>
           <WhatWeDo/>
           <Testimonials/>
