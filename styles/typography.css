@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "HelveticaCEMedium";
+    src: local("HelveticaCEMedium"),
+    url(/fonts/HelveticaCEMedium.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: "FreeSans";
+    src: local("FreeSans"),
+    url(/fonts/FreeSans.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: "FreeSansBold";
+    src: local("FreeSansBold"),
+    url(/fonts/FreeSansBold.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: "FreeSansBoldOblique";
+    src: local("FreeSansBoldOblique"),
+    url(/fonts/FreeSansBoldOblique.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: "FreeSansOblique";
+    src: local("FreeSansOblique"),
+    url(/fonts/FreeSansOblique.otf) format('OpenType');
+}
+
+body{
+    font-family: 'HelveticaCEMedium', sans-serif;
+}

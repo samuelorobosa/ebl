@@ -1,6 +1,7 @@
 @import "jumbotron.css";
 @import "testimonials.css";
 @import "whatwedo.css";
+@import "typography.css";
 
 @tailwind base;
 @tailwind components;
