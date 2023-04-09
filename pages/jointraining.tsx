@@ -45,7 +45,7 @@ function Jointraining(){
         date_of_birth: Yup.string().required('Enter your date of birth'),
     })
 
-    const { register, handleSubmit, control, watch, formState: { errors } }
+    const { register, handleSubmit, control, formState: { errors } }
         = useForm({
         defaultValues: {
             state_of_Residence: null,
@@ -109,11 +109,11 @@ function Jointraining(){
         { value: 'Engineering', label: 'Engineering' },
         { value: 'Environmental Sciences', label: 'Environmental Sciences' },
         { value: 'Law', label: 'Law' },
+        { value: 'Life Sciences', label: 'Life Sciences' },
         { value: 'Management Science', label: 'Management Science' },
         { value: 'Pharmacy', label: 'Pharmacy' },
         { value: 'Physical Science', label: 'Physical Science' },
         { value: 'Social Science', label: 'Social Science' },
-        { value: 'School of Medical Sciences', label: 'School of Medical Sciences' },
         { value: 'College of Medicine', label: 'College of Medicine' },
         { value: 'Veterinary Medicine', label: 'Veterinary Medicine' },
     ];
@@ -142,7 +142,7 @@ function Jointraining(){
             },
         });
     },{
-        onError: ({response})=>{
+        onError: ()=>{
             toast.error("An error occurred");
         },
         onSuccess: ()=>{

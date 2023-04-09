@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import {NavProvider} from "@/context/Navigation/NavContext";
 import {ModalProvider} from "@/context/Modal/ModalContext";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import Modals from "@/components/Modals";
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
@@ -52,7 +51,6 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Modals/>
               </NavProvider>
           </ModalProvider>
-          <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
   )
 

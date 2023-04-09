@@ -44,9 +44,9 @@ function Testimonials(){
             footer: 'EBL 2022'
         }
     ]
-    return <section className="h-90 max-w-6xl mx-auto mt-24">
+    return <section className="h-90 max-w-6xl w-11/12 mx-auto mt-24">
         <h2 className="text-center font-black text-2xl">What People Say About Us</h2>
-        <Slider {...testimonial_settings} className="grid grid-cols-[repeat(3,_1fr)] grid-rows-1 justify-between gap-5 my-20 text-white">
+        <Slider {...testimonial_settings} className="grid grid-cols-3 grid-rows-1 justify-between gap-5 my-20 text-white">
             {
                 TESTIMONIAL_DATA.map(({id, name, comment, footer})=>{
                     return <article key={id} className={`testimonial testimonial_${id}`}>

@@ -43,9 +43,9 @@ function WhatWeDo(){
         },
     ]
 
-    return <section className="h-full max-w-6xl mx-auto mt-24">
+    return <section className="h-full max-w-6xl w-11/12 mx-auto mt-24">
             <h2 className="text-center font-black text-2xl">What We Do</h2>
-            <Slider {...settings} className="grid grid-cols-[repeat(3,_1fr)] gap-5 mt-10">
+            <Slider {...settings} className="grid grid-cols-3 gap-5 mt-10">
                     {
                         WHAT_WE_DO.map(({id,header,body}) => <article key={id} className="p-2.5 h-[30rem] border border-ebl-primary rounded-md text-center">
                                 <Image
