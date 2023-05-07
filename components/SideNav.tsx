@@ -56,7 +56,7 @@ export default function SideNav (){
                     <Link href="/about" className="py-4 pl-10 pr-12 block w-full whitespace-nowrap">
                         <span onClick={()=>handleRouteChange()}>About Us</span>
                     </Link>
-                    <Link href="/jointraining" className="py-4 pl-10 pr-12 block w-full whitespace-nowrap">
+                    <Link href="/joinmasterclass" className="py-4 pl-10 pr-12 block w-full whitespace-nowrap">
                         <span onClick={()=>handleRouteChange()}>Join Training</span>
                     </Link>
                 </div>

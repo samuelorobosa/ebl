@@ -55,8 +55,8 @@ function WhatWeDo(){
                                     src={`/images/${header.toLowerCase()}.jpeg`} alt="description_image"/>
                             <h2 className="text-xl my-2 text-center font-bold">{header}</h2>
                             <p className="text-blacks4">{body}</p>
-                            <Link href="/jointraining" className="bg-white border-ebl-primary border text-ebl-primary w-52 mb-10 py-1.5 mx-auto block mt-10 rounded-md">
-                                Join Training
+                            <Link href="/joinmasterclass" className="bg-white border-ebl-primary border text-ebl-primary w-52 mb-10 py-1.5 mx-auto block mt-10 rounded-md">
+                                Join Masterclass
                             </Link>
                         </article>)
                     }

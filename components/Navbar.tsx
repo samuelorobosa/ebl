@@ -24,9 +24,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-5 max-w-6xl mx-auto text-white">
             <Link href="/">
                 <Image
-                    width={100}
-                    height={100}
-                    src='/images/logo_1.png' alt="Brand Logo"/>
+                    width={130}
+                    height={130}
+                    src='/images/ebl_logo.png' alt="Brand Logo"/>
             </Link>
 
             <aside className="hidden sm:block">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         (
                             <aside className="flex gap-6 -mt-2.5 mr-2.5">
                                 <Link href="/about">About Us</Link>
-                                <Link href="/jointraining">Join Training</Link>
+                                <Link href="/joinmasterclass">Join Masterclass</Link>
                             </aside>
                         ):
                         (

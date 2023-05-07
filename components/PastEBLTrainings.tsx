@@ -13,7 +13,7 @@ function PastEBLTrainings(){
         { src: "/images/pasttraining7.png", alt: "Past Training 7" },
     ];
     return(
-        <section className="max-w-6xl mx-auto py-24 px-5 text-center">
+        <section className="max-w-6xl mx-auto py-16 px-5 text-center">
                 <h2 className="text-ebl-black text-3xl font-black my-2.5">Past EBL Trainings</h2>
                 <p className="text-ebl-black">Take a look back at the impactful events that have shaped our journey</p>
 

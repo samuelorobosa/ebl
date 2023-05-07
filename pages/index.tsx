@@ -16,14 +16,14 @@ export default function Home() {
       <SideNav/>
       <main>
           <Jumbotron classNames="jumbotron_index">
-              <div className="text-white text-center max-w-lg mx-auto mt-36">
-                  <p>EBL Training</p>
+              <div className="text-white text-center max-w-lg mx-auto mt-24">
+                  <p>EBL Masterclass</p>
                   <h2 className='font-extrabold text-4xl my-3'>Equipping youths with relevant skills needed for the future</h2>
-                  <p>EBL Training is aimed at exploring employability, business and leadership as vital skills needed in our ever changing world.</p>
+                  <p>Employability, Business and Leadership Masterclass is aimed at exploring employability, business and leadership as vital skills needed in our ever changing world.</p>
               </div>
 
-              <Link href="/jointraining" className="bg-ebl-primary text-center text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
-                  Join Training
+              <Link href="/joinmasterclass" className="bg-ebl-primary text-center text-white w-72 py-1.5 mx-auto block mt-7 rounded-md">
+                  Join Masterclass
               </Link>
           </Jumbotron>
           <WhatWeDo/>

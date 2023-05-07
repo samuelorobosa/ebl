@@ -28,7 +28,7 @@ type FormValues = {
 type APIResponse = {
     response: any;
 };
-function Jointraining(){
+function Joinmasterclass(){
 
     const { modalDispatch } = useContext(ModalContext);
 
@@ -159,7 +159,7 @@ function Jointraining(){
             <section className="max-w-6xl mx-auto">
                 <header className="text-center">
                     <h2 className="text-ebl-black font-bold text-3xl">
-                        Join EBL Training
+                        Join EBL Masterclass
                     </h2>
                     <p className="text-ebl-black mt-2 text-lg">
                         Congratulations on making the decision of joining this training. Fill out this form correctly and submit it after completion
@@ -337,4 +337,4 @@ function Jointraining(){
         </div>
     )
 }
-export default Jointraining;
+export default Joinmasterclass;

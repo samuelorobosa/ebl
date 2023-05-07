@@ -34,13 +34,13 @@ function Testimonials(){
         {
             id: 'osato_mercy',
             name: 'Osato Mercy',
-            comment: 'The employability skills training helped me get a better understanding of corporate culture and set me up real good for the future ahead of me.',
+            comment: 'The masterclass has helped me expand my knowledge , build a network of peers, foster personal growth, and increase my confidence as a leader.',
             footer: 'EBL 2022'
         },
         {
             id: 'idehen_violet',
             name: 'Idehen Violet',
-            comment: 'The employability skills training helped me get a better understanding of corporate culture and set me up real good for the future ahead of me.',
+            comment: 'The masterclass has helped me learn how to optimize my processes, improve my service offerings and increase my profitability.',
             footer: 'EBL 2022'
         }
     ]

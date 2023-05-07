@@ -3,6 +3,7 @@ import {useContext} from "react";
 import ModalContext from "@/context/Modal/ModalContext";
 import {NextRouter, useRouter} from "next/router";
 import {motion} from "framer-motion";
+import Link from "next/link";
 
 
 function Modals(){
@@ -27,9 +28,12 @@ function Modals(){
                     <Image className="mx-auto" src="/images/mail.png" width={200} height={200} alt="Mail"/>
                     <header className="max-w-md mx-auto">
                         <h3 className="text-2xl font-bold text-blacks4">Congratulations! Your application was successful</h3>
-                        <p>We have received your application and would get back to you soon with updates on the training.</p>
+                        <p className="mt-2">Click on the link below to join the Whatsapp group for updates on the upcoming masterclass.</p>
+                        <Link className="mt-3 inline-block text-ebl-primary2 underline" href="https://chat.whatsapp.com/JSfyWx9fIcK00AbScH7AB0">
+                            Join Now
+                        </Link>
                     </header>
-                    <button onClick={()=>removeAllModals()} className="bg-transparent text-ebl-primary2 border border-ebl-primary2 rounded-lg py-2 px-1 w-1/2 mt-4 block mx-auto">
+                    <button onClick={()=>removeAllModals()} className="bg-transparent text-ebl-primary2 border border-ebl-primary2 rounded-lg py-2 px-1 w-1/2 mt-2 block mx-auto">
                         Return to Home
                     </button>
                 </div>
