@@ -29,8 +29,8 @@ function Modals(){
                     <header className="max-w-md mx-auto">
                         <h3 className="text-2xl font-bold text-blacks4">Congratulations! Your application was successful</h3>
                         <p className="mt-2">Click on the link below to join the Whatsapp group for updates on the upcoming masterclass.</p>
-                        <Link className="mt-3 inline-block text-ebl-primary2 underline" href="https://chat.whatsapp.com/JSfyWx9fIcK00AbScH7AB0">
-                            Join Now
+                        <Link className="mt-3 inline-block text-ebl-primary2 underline" href="https://chat.whatsapp.com/JabCyZOjfm71m0cWsmo3YZ">
+                            Join WhatsApp Group
                         </Link>
                     </header>
                     <button onClick={()=>removeAllModals()} className="bg-transparent text-ebl-primary2 border border-ebl-primary2 rounded-lg py-2 px-1 w-1/2 mt-2 block mx-auto">
